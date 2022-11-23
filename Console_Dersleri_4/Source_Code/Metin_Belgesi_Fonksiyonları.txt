@@ -1,0 +1,37 @@
+﻿//Metin Belgesi Oluşturma
+
+            //C:\Users\asus\Desktop\MURAT YAZILIM\C# ve SQL 101\Console_Dersleri_4\Deneme.txt
+            string filePath;
+            filePath = @"C:\Users\asus\Desktop\MURAT YAZILIM\C# ve SQL 101\Console_Dersleri_4\Test2.txt";
+            //FileStream fileStream = new FileStream(filePath,FileMode.Create);
+
+            //Console.WriteLine("Metin belgesi oluşturuldu");
+
+            //METİN BELGESİNİN İÇİNE YAZI YAZMA
+
+            //FileStream fileStream = new FileStream(filePath, FileMode.OpenOrCreate, FileAccess.Write);
+            //StreamWriter streamWriter = new StreamWriter(fileStream);  //akışta filestream de türetmiş olduğumuz nesnedeki item a göre işlem yapıcak.
+            //streamWriter.WriteLine("1.Satır");
+            //streamWriter.WriteLine("2.Satır");
+            //streamWriter.WriteLine("3.Satır");
+
+            //streamWriter.Flush();
+            //streamWriter.Close();
+            //fileStream.Close();
+
+            //Console.WriteLine("Dosya yazdırma işlemi tamamlandı");
+
+
+            //METİN BELGESİ İÇİNDEKİ YAZIYI OKUMA İŞLEMİ
+
+            FileStream fileStream = new FileStream(filePath, FileMode.Open, FileAccess.Read);
+            StreamReader streamReader = new StreamReader(fileStream);
+            string content = streamReader.ReadLine();
+            while (content != null)
+            {
+                Console.WriteLine(content);
+                content = streamReader.ReadLine();
+            }
+
+            streamReader.Close();
+            fileStream.Close();

@@ -1,0 +1,13 @@
+﻿//Random sınıfı
+
+//Random nesne_adi = new Random();
+//nesne_adi. ......
+
+ Random rnd = new Random();
+ int sayi1 = rnd.Next();    //belirsiz aralıkta sayı random atar
+ int sayi2 = rnd.Next(99);   //max değer belirterek random atar
+ int sayi3 = rnd.Next(1,10);   //2 değer arası random atar
+
+ Console.WriteLine(sayi1);           
+ Console.WriteLine(sayi2);
+ Console.WriteLine(sayi3);                      
