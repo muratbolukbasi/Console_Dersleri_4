@@ -50,8 +50,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Source_Code\Matematiksel_Komutlar.txt" />
     <Content Include="Source_Code\Metin_Belgesi_Fonksiyonları.txt" />
     <Content Include="Source_Code\Random Sınıfı.txt" />
+    <Content Include="Source_Code\String_Ile_Ilgili_Komutlar.txt" />
+    <Content Include="Source_Code\Try_Catch_Komutu.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

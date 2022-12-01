@@ -12,18 +12,7 @@ namespace Console_Dersleri_4
         static void Main(string[] args)
         {
 
-            
-            string cumle1 = "Merhaba \nDunya \nNasılsın";  // \n bir alt satıra geçirir
-            Console.WriteLine(cumle1);
-
-            string cumle2 = "Merhaba Dunya Nasılsın"; 
-            Console.WriteLine(cumle2.ToUpper());  //ToUpper bütün karakterleri büyük harf yapar.
-
-            string cumle3 = "MerhABA DUNYA NasılSın";
-            Console.WriteLine(cumle3.ToLower()); //ToLower bütün karakteri küçük harf yapar.
-
-
-
+            //Bilgiler text dosyalarında
 
             Console.ReadLine();
         }

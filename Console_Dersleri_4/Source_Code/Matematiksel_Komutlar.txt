@@ -1,0 +1,26 @@
+﻿//MATEMATİKSEL FONKSİYONLAR 1
+
+            double sayi1;
+            sayi1 = -458;
+            Console.WriteLine(Math.Abs(sayi1));       //Mutlak değer gösterir
+
+            double sayi2, sayi3;
+            sayi2 = 25;
+            sayi3 = 85;
+            Console.WriteLine(Math.Min(sayi2,sayi3));  //Min değeri gösterir
+            Console.WriteLine(Math.Max(sayi2,sayi3));   //Max değeri gösterir
+
+            int sayi4 = 8;
+            Console.WriteLine(Math.Pow(sayi4,2));     //Pow sayının kuvveti
+
+            int sayi5 = 625;
+            Console.WriteLine(Math.Sqrt(sayi5));    //Sqrt karekönü alır
+
+            double sayi6 = 47.85;
+            Console.WriteLine(Math.Floor(sayi6));   //Ondalıklı sayıyı tabana yuvarlar
+            Console.WriteLine(Math.Ceiling(sayi6));  //Ondalıklı sayıyı üste yuvarlar
+
+            Console.WriteLine(Math.PI);  //Pi değerini yazdırır
+
+            double sayi7 = 42.60;
+            Console.WriteLine(Math.Round(sayi7));   //Ondalıklı sayıyı en yakın tam sayıya yuvarlar

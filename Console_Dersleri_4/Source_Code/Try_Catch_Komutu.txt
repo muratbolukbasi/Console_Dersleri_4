@@ -1,0 +1,46 @@
+﻿//Try Catch Komutu
+
+            int sayi;
+            Console.Write("Bir sayı giriniz: ");
+            sayi = Convert.ToInt32(Console.ReadLine());
+            int sonuc = sayi * 2;
+            Console.WriteLine("Sayının 2 katı: " + sonuc);
+
+            try
+            {
+                int sayi2;
+                Console.Write("Sayıyı giriniz: ");
+                sayi2 = Convert.ToInt32(Console.ReadLine());
+                int sonuc2 = sayi2 * sayi2;
+                Console.WriteLine("Sayının karesi: " + sonuc2);
+            }
+            catch
+            {
+                Console.WriteLine("Bir hata oluştu, tekrar deneyin");
+            }
+
+
+            try
+            {
+                int sayi;
+                Console.Write("Bir sayı giriniz: ");
+                sayi = Convert.ToInt32(Console.ReadLine());
+                int kup = sayi * sayi * sayi;
+                Console.WriteLine("Sayının küpü: " + kup);
+            }
+            catch (ArgumentNullException)
+            {
+                Console.WriteLine("Değer girilmedi");
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Hatalı veri formatı girildi");
+            }
+            catch (OverflowException)
+            {
+                Console.WriteLine("Girdiğiniz değer çok büyük ya da çok küçük");
+            }
+            finally
+            {
+                Console.WriteLine("İşlem tamamlandı :)");
+            }

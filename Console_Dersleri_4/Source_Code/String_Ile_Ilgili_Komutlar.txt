@@ -1,0 +1,57 @@
+﻿//TOUPPER - TOLOWER KOMUTLARI
+
+            string cumle1 = "Merhaba \nDunya \nNasılsın";  // \n bir alt satıra geçirir
+            Console.WriteLine(cumle1);
+
+            string cumle2 = "Merhaba Dunya Nasılsın"; 
+            Console.WriteLine(cumle2.ToUpper());  //ToUpper bütün karakterleri büyük harf yapar.
+
+
+            string cumle3 = "MerhABA DUNYA NasılSın";
+            Console.WriteLine(cumle3.ToLower()); //ToLower bütün karakteri küçük harf yapar.
+
+
+            Console.WriteLine("------------------------------");
+
+
+            //STARTSWITH - ENDSWITH KOMUTLARI
+
+            string cumle4 = "bugün C# dersleri devam ediyor";
+            Console.WriteLine(cumle4.StartsWith("bu")); //StartsWith cümle yazdığımız ifade ile başlıyorsa True başlamıyorsa False olacaktır.
+
+            Console.WriteLine(cumle4.EndsWith("yorum")); // EndsWith ile cümle yazdığımız ifade ile bitiyorsa True başka ifade ile bitiyorsa False olacaktır.
+
+            Console.WriteLine("--------------------------------");
+
+            //INDEX OF METOTU
+
+            string cumle5 = "merhaba nasılsınız";
+            Console.WriteLine(cumle5.IndexOf("nasıl"));
+            Console.WriteLine(cumle5.IndexOf("ha"));
+            //INDEX OF Komutu yazdığımız karakterin ana string te kaçıncı indexte başladığını gösterir.
+
+            //INSERT KOMUTU: String ifadenin içine string yazı ekleme
+
+            Console.WriteLine(cumle5.Insert(8,"selam"));
+
+            Console.WriteLine("-----------------------------------");
+
+            //REMOVE VE SUBSTRİNG KOMUTLARI
+
+            string cumle6 = "merhaba nasılsınız";
+            Console.WriteLine(cumle6.Remove(4)); //4. indexten sonrasını sil
+
+            Console.WriteLine(cumle6.Substring(9)); //9. indexten öncesini sil
+
+            Console.WriteLine("-------------------------------------");
+
+            //REPLACE VE TRIM KOMUTLARI
+
+            string cumle7 = "merhaba dünyalı dostlarım";
+            Console.WriteLine(cumle7.Replace("ü","u")); //ifadede karakter değiştirme
+
+            string cumle8 = "    merhaba nasılsınız   ";
+            Console.WriteLine(cumle8.Trim());   //Trim ifadedeki boşlukları siler
+
+            string cumle9 = "merhaba dostlarım nasılsınız";
+            Console.WriteLine(cumle9.Length);  //Length string karakter sayısını verir
